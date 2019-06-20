@@ -1,0 +1,28 @@
+.root{
+    -fx-background-image: url("/img/spy.jpg ");
+    -fx-font-size: 14px;
+}
+
+.button{
+    -fx-pref-height: 40px;
+    -fx-pref-width: 100px;
+    -fx-background-color: rgb(204,224,213);
+    -fx-text-fill: #000000;
+}
+
+.label{
+    -fx-font-size: 20;
+    -fx-text-fill: #FFFFFF;
+}
+
+#showPrincess{
+    -fx-background-color: rgb(249, 242, 226);
+}
+
+#showBoss{
+    -fx-background-color: rgb(249, 242, 226);
+}
+
+.button:hover{
+    -fx-background-color: #FFFFFF;
+}

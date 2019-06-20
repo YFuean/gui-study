@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.Label?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.JianShu.JianShuController"
+            prefHeight="400.0" prefWidth="600.0">
+    <top>
+        <AnchorPane prefHeight="80" prefWidth="600">
+            <ImageView fx:id="logo" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="10">
+                <Image url="/img/logo.png"/>
+            </ImageView>
+            <Button fx:id="find" text="发现" prefWidth="50" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="170"/>
+            <Button fx:id="attention" text="关注" prefWidth="50" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="240"/>
+            <Button fx:id="information" text="消息" prefWidth="50" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="310"/>
+            <TextField fx:id="search" text="搜索" AnchorPane.topAnchor="23" AnchorPane.leftAnchor="380"/>
+            <Button fx:id="search2" AnchorPane.topAnchor="23" AnchorPane.leftAnchor="555"/>
+            <Button fx:id="Aa" text="Aa" prefWidth="40" AnchorPane.topAnchor="25" AnchorPane.rightAnchor="300"/>
+            <Button fx:id="my" AnchorPane.topAnchor="15" AnchorPane.rightAnchor="200"/>
+            <Button fx:id="write" text="写文章" AnchorPane.topAnchor="10" AnchorPane.rightAnchor="15"
+                    prefWidth="150" prefHeight="50"/>
+        </AnchorPane>
+    </top>
+    <center>
+        <ListView prefWidth="600">
+            <AnchorPane prefWidth="600">
+                <ImageView fitWidth="500" fitHeight="300" AnchorPane.leftAnchor="100" AnchorPane.topAnchor="50">
+                    <Image url="/img/banner.png"/>
+                </ImageView>
+                <VBox prefWidth="100" prefHeight="500"
+                      AnchorPane.rightAnchor="80" AnchorPane.topAnchor="50" spacing="10">
+                    <ImageView fitHeight="70" fitWidth="450">
+                        <Image url="/img/right1.png"/>
+                    </ImageView>
+                    <ImageView fitHeight="70" fitWidth="450">
+                        <Image url="/img/right2.png"/>
+                    </ImageView>
+                    <ImageView fitHeight="70" fitWidth="450">
+                        <Image url="/img/right3.png"/>
+                    </ImageView>
+                    <ImageView fitHeight="70" fitWidth="450">
+                        <Image url="/img/right4.png"/>
+                    </ImageView>
+                    <ImageView fitHeight="70" fitWidth="450">
+                        <Image url="/img/right5.png"/>
+                    </ImageView>
+                </VBox>
+
+                <VBox AnchorPane.rightAnchor="80" AnchorPane.topAnchor="550" spacing="20">
+                    <AnchorPane prefWidth="450" prefHeight="10">
+                        <Label fx:id="tuijianWriter" text="推荐作者" AnchorPane.leftAnchor="5" AnchorPane.topAnchor="0"/>
+                        <Button fx:id="change" text="换一批" AnchorPane.rightAnchor="5" AnchorPane.topAnchor="0"/>
+                    </AnchorPane>
+                    <AnchorPane prefWidth="450" prefHeight="50">
+                        <ImageView fitWidth="50" fitHeight="50" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0">
+                            <Image url="/img/1.png"/>
+                        </ImageView>
+                        <Label fx:id="name1" text="王诗翔" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="60"/>
+                        <Label fx:id="introduction1" text="写了445k字·1.8k喜欢" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="60"/>
+                        <Button fx:id="follow1" text="关注" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="5"/>
+                    </AnchorPane>
+                    <AnchorPane prefWidth="450" prefHeight="50">
+                        <ImageView fitWidth="50" fitHeight="50" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0">
+                            <Image url="/img/5.png"/>
+                        </ImageView>
+                        <Label fx:id="name2" text="无限猴子" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="60"/>
+                        <Label fx:id="introduction2" text="写了619.7k字·348喜欢" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="60"/>
+                        <Button fx:id="follow2" text="关注" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="5"/>
+                    </AnchorPane>
+                    <AnchorPane prefWidth="450" prefHeight="50">
+                        <ImageView fitWidth="50" fitHeight="50" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0">
+                            <Image url="/img/3.png"/>
+                        </ImageView>
+                        <Label fx:id="name3" text="吴晓布" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="60"/>
+                        <Label fx:id="introduction3" text="写了619.7k字·16.2k喜欢" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="60"/>
+                        <Button fx:id="follow3" text="关注" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="5"/>
+                    </AnchorPane>
+                    <AnchorPane prefWidth="450" prefHeight="50">
+                        <ImageView fitWidth="50" fitHeight="50" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0">
+                            <Image url="/img/4.png"/>
+                        </ImageView>
+                        <Label fx:id="name4" text="红瑀" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="60"/>
+                        <Label fx:id="introduction4" text="写了288.6k字·10.8k喜欢" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="60"/>
+                        <Button fx:id="follow4" text="关注" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="5"/>
+                    </AnchorPane>
+                    <AnchorPane prefWidth="450" prefHeight="50">
+                        <ImageView fitWidth="50" fitHeight="50" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0">
+                            <Image url="/img/2.png"/>
+                        </ImageView>
+                        <Label fx:id="name5" text="简书大学堂" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="60"/>
+                        <Label fx:id="introduction5" text="写了1433.9k字·26.4k喜欢" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="60"/>
+                        <Button fx:id="follow5" text="关注" AnchorPane.topAnchor="0" AnchorPane.rightAnchor="5"/>
+                    </AnchorPane>
+                    <Button fx:id="LookAll" prefWidth="450" prefHeight="20" text="查看全部"/>
+                </VBox>
+
+                <VBox AnchorPane.topAnchor="380" AnchorPane.leftAnchor="100" spacing="20"
+                      prefWidth="300">
+                    <AnchorPane prefHeight="200" prefWidth="300">
+                        <Button fx:id="title1" text="我不是女神" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="20"/>
+                        <FlowPane prefWidth="300" prefHeight="120"
+                                  AnchorPane.topAnchor="80" AnchorPane.leftAnchor="0">
+                            <Label fx:id="content1" prefWidth="300"
+                                   text="文 | 云舒 罗素曾说过:累累伤痕是生命给你的最好礼物。但是谁又真心喜欢这份礼物呢，只不过当命运把这份沉重的礼物塞到你的怀里时，你“盛情难却”罢..."/>
+                        </FlowPane>
+                        <Button fx:id="writer1" text="云舒老师" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="0"/>
+                        <Button fx:id="comment1" text="188" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="100"/>
+                        <Button fx:id="like1" text="152" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="200"/>
+                        <ImageView AnchorPane.topAnchor="20" AnchorPane.leftAnchor="300"
+                                   fitHeight="150" fitWidth="200">
+                            <Image url="/img/11.png"/>
+                        </ImageView>
+                    </AnchorPane>
+                    <AnchorPane prefHeight="200" prefWidth="300">
+                        <Button fx:id="title2" text="14天linux命令加强" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="20"/>
+                        <FlowPane prefWidth="300" prefHeight="120"
+                                  AnchorPane.topAnchor="80" AnchorPane.leftAnchor="0">
+                            <Label fx:id="content2" prefWidth="300"
+                                   text="linux命令加强 复习 cd./ 当前目录../ 上级目录/代表根目录 or 代表目录和文件之间的分隔符 ..p..."/>
+                        </FlowPane>
+                        <Button fx:id="writer2" text="rendj1215" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="0"/>
+                        <Button fx:id="comment2" text="4" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="100"/>
+                        <Button fx:id="like2" text="336" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="200"/>
+                        <ImageView AnchorPane.topAnchor="20" AnchorPane.leftAnchor="300"
+                                   fitHeight="150" fitWidth="200">
+                            <Image url="/img/22.png"/>
+                        </ImageView>
+                    </AnchorPane>
+                    <AnchorPane prefHeight="200" prefWidth="300">
+                        <Button fx:id="title3" text="这不是翘臀，这叫骨盆前倾" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="20"/>
+                        <FlowPane prefWidth="300" prefHeight="120"
+                                  AnchorPane.topAnchor="80" AnchorPane.leftAnchor="0">
+                            <Label fx:id="content3" prefWidth="300"
+                                   text="前两天，有个学员拿着手机给我看”“教练，我想拥有这样的翘臀！这得练多久啊？”“这个啊，你现在就可以拥有啊！“ “啊？我的还没有这么翘吧……“ ..."/>
+                        </FlowPane>
+                        <Button fx:id="writer3" text="健身教练冉苒" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="0"/>
+                        <Button fx:id="comment3" text="1" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="100"/>
+                        <Button fx:id="like3" text="28" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="200"/>
+                        <ImageView AnchorPane.topAnchor="20" AnchorPane.leftAnchor="300"
+                                   fitHeight="150" fitWidth="200">
+                            <Image url="/img/33.png"/>
+                        </ImageView>
+                    </AnchorPane>
+                </VBox>
+            </AnchorPane>
+        </ListView>
+    </center>
+</BorderPane>

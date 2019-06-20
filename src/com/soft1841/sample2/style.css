@@ -1,0 +1,11 @@
+.button{
+    -fx-background-color: rgb(198,47,47);
+    -fx-text-fill: #FFFFFF;
+    /*字体大小*/
+    -fx-font-size: 20;
+    /*字体粗细*/
+    -fx-font-weight: 800;
+    /*按钮长宽*/
+    -fx-min-width: 100px;
+    -fx-min-height: 40px;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.sample2.SingerController">
+    <!--顶部-->
+    <top>
+        <HBox spacing="20">
+            <Button text="歌手" onAction="#showAll"/>
+            <Button text="歌手排行"/>
+        </HBox>
+    </top>
+    <!--中间-->
+    <center>
+        <FlowPane fx:id="singerPane">
+        </FlowPane>
+    </center>
+
+</BorderPane>

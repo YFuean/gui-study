@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.AddressBook.AddressBookController"
+            prefHeight="400.0" prefWidth="600.0"
+            fx:id="mainContainer">
+    <left>
+        <VBox spacing="20">
+            <padding>
+                <Insets top="20" left="29"/>
+            </padding>
+            <HBox spacing="20">
+                <ComboBox fx:id="genderAndDormBox" prefWidth="100" promptText="选择"/>
+                <TextField text="搜索" fx:id="keywordsField" onMouseClicked="#enter"/>
+                <Button onAction="#searchByKeywords"/>
+            </HBox>
+            <ListView fx:id="addressBookListView" prefWidth="300" prefHeight="500"/>
+        </VBox>
+    </left>
+
+</BorderPane>

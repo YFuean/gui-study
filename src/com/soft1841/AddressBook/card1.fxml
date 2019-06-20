@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.AddressBook.AddressBookController"
+            prefHeight="500.0" prefWidth="500.0"
+            fx:id="cardOne">
+
+        <ImageView fx:id="/img/tx4.jpg" fitHeight="40" fitWidth="40"
+                   AnchorPane.topAnchor="85" AnchorPane.leftAnchor="500"/>
+        <Label text="夏铭慧"
+               AnchorPane.topAnchor="140" AnchorPane.leftAnchor="500"/>
+        <Label text="地区：宿迁"
+               AnchorPane.topAnchor="160" AnchorPane.leftAnchor="500"/>
+        <Label text="电话：13218926189    宿舍：346"
+               AnchorPane.topAnchor="180" AnchorPane.leftAnchor="500"/>
+</AnchorPane>

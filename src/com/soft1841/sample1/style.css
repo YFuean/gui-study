@@ -1,0 +1,21 @@
+.root {
+    -fx-background-image: url("/img/background1.png");
+}
+
+.button {
+    -fx-pref-width: 100px;
+    -fx-pref-height: 40px;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: rgb(62,188,175);
+}
+
+#arrayList {
+    -fx-max-width: 400px;
+    -fx-max-height: 200px;
+    -fx-font-size: 14px;
+}
+
+#maxLabel {
+    -fx-text-fill: rgb(62,188,175);
+    -fx-font-size: 20px;
+}

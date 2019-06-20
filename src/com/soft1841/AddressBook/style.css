@@ -1,0 +1,9 @@
+.root{
+    -fx-background-image: url("/img/background2.jpg");
+}
+
+.button{
+    -fx-background-image: url("/img/sousuo.png");
+    -fx-min-width: 25px;
+}
+
